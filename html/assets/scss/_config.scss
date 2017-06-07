@@ -1,0 +1,103 @@
+//--------
+// Config
+//
+// Variable definitions
+
+
+//----------------------------------------------------------------------------------------------------------------------
+// FONTS
+//----------------------------------------------------------------------------------------------------------------------
+
+//--------
+// Font family
+$font-regular: 'OpenSans Regular', Helvetica, Tahoma, Arial, sans-serif;
+$font-light: 'OpenSans Light', Helvetica, Tahoma, Arial, sans-serif;
+$font-bold: 'OpenSans Semibold', Helvetica, Tahoma, Arial, sans-serif;
+
+
+//--------
+// Font weights
+$font-weight-light: 100;
+$font-weight-regular: 400;
+$font-weight-bold: 800;
+
+//--------
+// Base font
+$base-font-family: $font-regular;
+$base-font-weight: $font-weight-regular;
+$base-font-size: 16px;
+$base-font-factorial: 1.0;
+
+//--------
+// Fixed font
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: 1.4;
+
+
+//----------------------------------------------------------------------------------------------------------------------
+// DIMENSIONS
+//----------------------------------------------------------------------------------------------------------------------
+
+//--------
+// Stack order
+$z-index-0:   0;
+$z-index-1:   1;
+$z-index-2:   2;
+$z-index-3:   3;
+$z-index-4:   4;
+$z-index-5:   5;
+$z-index-6:   6;
+$z-index-7:   7;
+$z-index-8:   8;
+$z-index-9:   9;
+$z-index-10: 10;
+$z-below: -999999;
+$z-above: 999999;
+
+
+//----------------------------------------------------------------------------------------------------------------------
+// TRANSITIONS
+//----------------------------------------------------------------------------------------------------------------------
+
+//--------
+// Defaults
+$trans-speed: 0.2s;
+$trans-ease: linear;
+
+
+//----------------------------------------------------------------------------------------------------------------------
+// BASE COLORS
+//----------------------------------------------------------------------------------------------------------------------
+$primary-color-dark:   #FFA000;
+$primary-color:        #FFC107;
+$primary-color-light:  #FFECB3;
+$primary-color-text:   #212121;
+$accent-color:         #607D8B;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+$dark-grey: rgba(51,51,51,1.0);             // #333333
+$dark-grey-hex: #333333;
+$logo-red: rgba(252,92,63,1.0);             // #fc5c3f
+$logo-red-hex: #fc5c3f;
+//--------
+// Base colors
+
+
+//--------
+// Link colors
+$body-link-color: #ffffff;
+$body-link-hover: #000000;
+$body-link-active: #ffffff;
+$body-link-visited: #000000;
+
+//--------
+// Text colors
+$main-text-color: #dddddd;
+
+
+//--------
+// Element colors
+$default-border-color: rgba(219, 218, 218, 1);

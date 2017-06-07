@@ -1,0 +1,49 @@
+//--------
+// Main
+//
+// Main Stylesheet Entry Point
+// This file combines imported files into a primary style sheet
+
+
+//--------
+// Variable definitions
+@import "config";
+
+//--------
+// Mixin definitions
+@import "helpers/mixers";
+
+
+//--------
+// Typography definitions
+@import "partials/fonts";
+
+//--------
+// Media print style definitions
+@import "helpers/print";
+
+//--------
+// Element resets based on normalize
+// See https://github.com/necolas/normalize.css
+// See http://necolas.github.io/normalize.css/latest/test.html
+@import "helpers/normalize";
+
+// -------
+// Global (no structural) styles
+@import "partials/global";
+
+// -------
+// Text, titles and headlines
+@import "partials/type";
+
+//--------
+// Form element and elements definitions
+@import "partials/form";
+
+//--------
+// Navigation definitions
+@import "partials/nav";
+
+//--------
+// Sitewide core layout structure
+@import "partials/layout";
