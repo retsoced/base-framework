@@ -68,31 +68,20 @@
 			<section class="row page">
 				<article>
 					<header>
-						<ul class="hero-slider">
-							<li><img src="https://c1.staticflickr.com/5/4267/34565309290_6d696d8068_b.jpg" width="100%" alt="White River"></li>
-							<li><img src="https://c1.staticflickr.com/5/4251/34802555381_c399401e67_b.jpg" width="100%" alt="White River Falls"></li>
-							<li><img src="https://c1.staticflickr.com/5/4269/34894204686_8f2b2f3167_b.jpg" width="100%" alt="White River"></li>
-							<li><img src="https://c1.staticflickr.com/5/4226/34894204796_e982f9270a_b.jpg" width="100%" alt="Valve"></li>
-						</ul>
+						<h1 class="page-title">Fancy page title</h1>
 					</header>
 					<div class="article-body">
-						<h1 class="page-title">Fancy page title</h1>
-						<div class="row flex three-up">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ultrices justo. Ut convallis magna turpis. Mauris vel sapien lobortis, euismod mi eu, semper mauris. Vivamus commodo, leo ac tempor pretium, arcu ex rutrum odio, sit amet consequat magna urna ut purus. Ut nec aliquam orci. Nullam nec justo feugiat, posuere velit eu, interdum orci. Duis lorem justo, feugiat et ultrices vitae, placerat vitae ante. Aliquam sagittis tempus eros sit amet varius. Sed dapibus augue fringilla venenatis varius. Nam at interdum odio. Ut ex felis, rutrum nec quam ut, ornare mattis elit.</p>
+
+						<p>Morbi blandit at libero placerat gravida. Maecenas ut aliquet risus, vel elementum erat. Cras eget ante consectetur, egestas ligula vel, fringilla nulla. Donec vulputate auctor egestas. Vestibulum imperdiet tempus imperdiet. Duis pulvinar neque magna, vitae porta turpis malesuada quis. Aenean euismod quam nec dui iaculis, in condimentum risus egestas. Ut vestibulum at tortor in sollicitudin. Vivamus a ante nisl. In eros ante, ultrices in ultricies eu, placerat id orci. Sed consectetur bibendum finibus.</p>
+						<div class="row flex two-up">
 							<div class="column">
-								<h3>Section sub-title</h3>
-								<p><img src="http://placehold.it/310x150" width="100%"></p>
+								<h2>Section sub-title</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ultrices justo. Ut convallis magna turpis. Mauris vel sapien lobortis, euismod mi eu, semper mauris. Vivamus commodo, leo ac tempor pretium, arcu ex rutrum odio, sit amet consequat magna urna ut purus. Ut nec aliquam orci. Nullam nec justo feugiat, posuere velit eu, interdum orci. Duis lorem justo, feugiat et ultrices vitae, placerat vitae ante. Aliquam sagittis tempus eros sit amet varius. Sed dapibus augue fringilla venenatis varius. Nam at interdum odio. Ut ex felis, rutrum nec quam ut, ornare mattis elit.</p>
 							</div>
 
 							<div class="column">
-								<h3>Section sub-title</h3>
-								<p><img src="http://placehold.it/310x150" width="100%"></p>
-								<p>Nulla aliquet, enim eget porttitor sollicitudin, nunc eros laoreet nibh, sed eleifend sapien nisl id arcu. Cras euismod eu nisi vitae rhoncus. Sed venenatis placerat nibh ut dapibus. Curabitur quis ipsum suscipit, gravida nisl quis, malesuada turpis. In facilisis convallis neque, sit amet placerat augue porta eget. Morbi rhoncus lobortis consequat. Nam tincidunt vitae nibh quis tempor. Quisque quis metus nec risus laoreet efficitur. Donec id ipsum vitae ante dictum pharetra. Ut arcu orci, fringilla a semper sagittis, interdum vitae lectus.</p>
-							</div>
-
-							<div class="column">
-								<h3>Section sub-title</h3>
-								<p><img src="http://placehold.it/310x150" width="100%"></p>
+								<h2>Section sub-title</h2>
 								<p>Duis placerat erat leo, facilisis semper augue sagittis a. Nam tempus sit amet lectus vitae posuere. Curabitur dignissim tellus eros, at iaculis ex laoreet ut. Sed tincidunt tellus sit amet felis elementum, vel ornare odio tempor. Duis laoreet auctor lectus, id mollis lorem. Praesent vitae ante venenatis, varius tortor nec, aliquam orci. Proin porta erat dolor, id tincidunt mauris volutpat nec. Donec at erat quis lacus euismod condimentum. Fusce laoreet consectetur arcu in condimentum. Nulla auctor, lectus a iaculis malesuada, enim ex euismod justo, et rutrum ipsum turpis sit amet nisl. Nunc porttitor vulputate nisi. Aenean a nibh velit.</p>
 							</div>
 						</div>
@@ -110,37 +99,6 @@
 						</ul>
 						<blockquote>Morbi blandit at libero placerat gravida. Maecenas ut aliquet risus, vel elementum erat. Cras eget ante consectetur, egestas ligula vel, fringilla nulla. Donec vulputate auctor egestas. Vestibulum imperdiet tempus imperdiet.</blockquote>
 						<hr />
-						<pre>
-							<code class="language-java">
-package mypackage;
-
-import de.svenjacobs.loremipsum.LoremIpsum;
-
-public class MyClass {
-  private LoremIpsum loremIpsum;
-
-  public MyClass() {
-    this.loremIpsum = new LoremIpsum();
-  }
-
-  public MyData createDummyData() {
-    MyData data = new MyData();
-
-    // returns 50 words of lorem ipsum text
-    data.setText( loremIpsum.getWords( 50 ) );
-
-    // returns 150 words of lorem ipsum text starting with
-    // the third word (text will not begin with "Lorem ipsum")
-    data.setAnotherText( loremIpsum.getWords( 150, 2 ) );
-
-    // returns two paragraphs of lorem ipsum
-    data.setYetAnotherText( loremIpsum.getParagraphs( 2 ) );
-
-    return data;
-  }
-}
-							</code>
-						</pre>
 					</div>
 					<footer class="article-footer"></footer>
 				</article>

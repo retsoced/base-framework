@@ -1,0 +1,140 @@
+// -------------
+// Site Header
+
+.site-header {
+	.logo {
+
+	}
+
+	// main nav styles are _nav.scss --------------
+}
+
+// -------------
+// Main layout
+
+main {
+	margin: 0;
+	padding: 0;
+
+	.hero-slider {
+		margin: 20px auto;
+		width: 100%;
+		list-style: none;
+
+		@include clean-block;
+
+		li {
+			list-style: none;
+
+			@include clean-block;
+		}
+	}
+
+	.row.page {
+		display: block;
+		position: relative;
+		overflow: auto;
+		margin: 0 auto;
+		background: $page-bg-color;
+	}
+
+	article {
+		header {
+			overflow: auto;
+		}
+	}
+}
+
+.row {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	max-width: 75vw;
+
+	&.flex {
+    @include flexy;  // flexbox
+
+		.column {
+			flex: 1 1 auto;
+		}
+
+		&.two-up {
+	    .column {
+				flex: 1 1 auto;
+				width: 50%;
+	    }
+    }
+
+    &.three-up {
+	    .column {
+		    width: 33%;
+	    }
+    }
+
+    &.four-up {
+	    .column {
+		    width: 25%;
+	    }
+    }
+
+    &.no-wrap {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.column {
+	overflow: auto;
+
+	p:nth-of-type(1n) {
+		margin-top: 0;
+		padding-top: 0;
+	}
+}
+
+// -------------
+// Site Footer
+
+.site-footer {
+	display: block;
+	position: relative;
+	clear: both;
+	height: 35px;
+	background: rgba(0,0,0,0.05);
+
+	.row {
+		margin: 0 auto;
+	}
+
+	.copyright {
+		float: left;
+		width: 200px;
+		padding: 10px 0;
+		text-align: left;
+		@extend .small;
+	}
+
+	.social-icons {
+		float: right;
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				list-style: none;
+				margin: 0;
+				padding: 8px 8px 0 0;
+				float: right;
+
+				a:link {
+
+					&:hover {
+
+					}
+				}
+			}
+		}
+	}
+}

@@ -3,7 +3,19 @@
 
 nav {
   &.main-nav {
+	  display: block;
+	  position: relative;
+	  clear: both;
+	  height: 35px;
+		background: rgba(0,0,0,0.05);
 
+		li {
+			display: block;
+			float: left;
+			padding: 6px 30px;
+			height: 35px;
+			text-align: center;
+		}
   }
 }
 
@@ -12,6 +24,6 @@ nav {
 
 menu {
   &.secondary-nav {
-    
+
   }
 }

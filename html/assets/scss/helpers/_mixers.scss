@@ -8,15 +8,35 @@
 // usage: @include for-desktop-up { [insert styles here] }
 
 @mixin for-phone-only {
-  @media (max-width: 480px) { @content; }
+  @media (max-width: 599px) { @content; }
 }
 
-@mixin narrow {
-  @media (max-width: 850px) { @content; }
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
 }
 
-@mixin wide {
-  @media (min-width: 850px) { @content; }
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+@mixin clean-block {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flexy ( $disp:flex, $dir:row, $wrap:wrap, $just:space-between ) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
 }
 
 //--------
@@ -120,4 +140,65 @@
     border-image:
     linear-gradient(to right, $color1, $color2) 1 100%;
   }
+}
+
+@mixin transition( $transition-property, $transition-time:0.25s, $method:ease-in-out ) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-o-keyframes #{$animation-name} {
+     @content;
+  }
+
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin brightness( $amount ) {
+  -webkit-filter: brightness( $amount );
+	-moz-filter: brightness( $amount );
+	-ms-filter: brightness( $amount );
+	-o-filter: brightness( $amount );
+	filter: brightness( $amount );
+}
+
+// --------
+// GRAYSCALE FILTER
+// usage: @include grayscale_element(100%);
+@mixin grayscale_element($value) {
+    -webkit-filter: #{"grayscale(#{$value})"};
+    -moz-filter: #{"grayscale(#{$value})"};
+    filter:#{"grayscale(#{$value})"};
+}
+
+@mixin font-stack ( $stack:light ) {
+  @if $stack == 'light' {
+   font-family: $base-font-stack;
+ } @else if $stack == 'reg' {
+   font-family: $regular-font-stack;
+ } @else if $stack == 'bold' {
+   font-family: $bold-font-stack;
+ } @else if $stack == 'semi' {
+   font-family: $semi-font-stack;
+ } @else if $stack == 'italic' {
+   font-family: $italic-font-stack;
+ }
 }

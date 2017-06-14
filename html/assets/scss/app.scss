@@ -28,6 +28,21 @@
 // See http://necolas.github.io/normalize.css/latest/test.html
 @import "helpers/normalize";
 
+// --------
+//Prism.js code coloring
+// http://prismjs.com/
+@import "vendor/prism";
+
+// --------
+// Lightslider Responsive slider
+// http://sachinchoolur.github.io/lightslider/
+@import "vendor/lightslider";
+
+// -------
+// Font-awesome
+// http://fontawesome.io/
+@import "vendor/fontawesome/font-awesome";
+
 // -------
 // Global (no structural) styles
 @import "partials/global";

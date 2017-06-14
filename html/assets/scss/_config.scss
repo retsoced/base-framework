@@ -3,6 +3,10 @@
 //
 // Variable definitions
 
+// -------
+//Layout
+
+$gutter: 15px;
 
 //----------------------------------------------------------------------------------------------------------------------
 // FONTS
@@ -10,10 +14,13 @@
 
 //--------
 // Font family
-$font-regular: 'OpenSans Regular', Helvetica, Tahoma, Arial, sans-serif;
-$font-light: 'OpenSans Light', Helvetica, Tahoma, Arial, sans-serif;
-$font-bold: 'OpenSans Semibold', Helvetica, Tahoma, Arial, sans-serif;
+$code-stack: 'Inconsolata', Menlo, Courier New, Courier, Mono, monospace;
 
+$base-font-stack: 'OpenSans Light', 'Segoe UI', Tahoma, sans-serif;
+$regular-font-stack: 'OpenSans Regular', 'Segoe UI', Tahoma, sans-serif;
+$italic-font-stack: 'OpenSans Light Italic', 'Segoe UI', Tahoma, sans-serif;
+$bold-font-stack: 'OpenSans Bold', 'Segoe UI', Tahoma, sans-serif;
+$semi-font-stack: 'OpenSans Semibold', 'Segoe UI', Tahoma, sans-serif;
 
 //--------
 // Font weights
@@ -23,7 +30,6 @@ $font-weight-bold: 800;
 
 //--------
 // Base font
-$base-font-family: $font-regular;
 $base-font-weight: $font-weight-regular;
 $base-font-size: 16px;
 $base-font-factorial: 1.0;
@@ -57,46 +63,43 @@ $z-above: 999999;
 
 
 //----------------------------------------------------------------------------------------------------------------------
-// TRANSITIONS
-//----------------------------------------------------------------------------------------------------------------------
-
-//--------
-// Defaults
-$trans-speed: 0.2s;
-$trans-ease: linear;
-
-
-//----------------------------------------------------------------------------------------------------------------------
 // BASE COLORS
 //----------------------------------------------------------------------------------------------------------------------
-$primary-color-dark:   #FFA000;
-$primary-color:        #FFC107;
-$primary-color-light:  #FFECB3;
-$primary-color-text:   #212121;
-$accent-color:         #607D8B;
-$primary-text-color:   #212121;
-$secondary-text-color: #757575;
-$divider-color:        #BDBDBD;
+$orange-peel:				   #FFA000;
+$amber:        				 #FFC107;
+$buttermilk:  				 #FFECB3;
+$mine-shaft:   				 #212121;
+$lynch:         			 #607D8B;
+$boulder:							 #757575;
+$green:								 #0f9d58;
+$red:									 #EB374A;
 
-$dark-grey: rgba(51,51,51,1.0);             // #333333
-$dark-grey-hex: #333333;
-$logo-red: rgba(252,92,63,1.0);             // #fc5c3f
-$logo-red-hex: #fc5c3f;
-//--------
-// Base colors
+$primary-text-color:   $mine-shaft;
+$secondary-text-color: $boulder;
 
+//----------------------------------------------------------------------------------------------------------------------
+// SHADES OF GRAY
+//----------------------------------------------------------------------------------------------------------------------
 
-//--------
-// Link colors
-$body-link-color: #ffffff;
-$body-link-hover: #000000;
-$body-link-active: #ffffff;
-$body-link-visited: #000000;
+$gray-ten:						rgb(229,229,229);
+$gray-twenty:					rgb(204,204,204);
+$gray-thirty:					rgb(178,178,178);
+$gray-forty:					rgb(153,153,153);
+$gray-fifty:					rgb(127,127,127);
+$gray-sixty:					rgb(102,102,102);
+$gray-seventy:				rgb(76,76,76);
+$gray-eighty:					rgb(51,51,51);
+$gray-ninety:					rgb(25,25,25);
+$gray-hundred:				rgb(0,0,0);
+
+$divider-color:       $gray-thirty;
+$divider-light:				$gray-ten;
+
+$page-bg-color: 			 #fff;
 
 //--------
 // Text colors
 $main-text-color: #dddddd;
-
 
 //--------
 // Element colors
